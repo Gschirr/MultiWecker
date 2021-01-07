@@ -17,6 +17,9 @@
     <ImageView
             android:layout_width="224dp"
             android:layout_height="211dp" app:srcCompat="@drawable/clocks" android:id="@+id/clockImage"
-            tools:layout_editor_absoluteY="33dp" tools:layout_editor_absoluteX="93dp"/>
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="33dp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="picture of a Clock"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">MultiWecker</string>
     <string name="newRoutine_button">New</string>
+    <string name="chooseRoutine_button">Choose</string>
 
     <!-- Image Descriptions -->
     <string name="clockIcon_description">Comic Picture of a Clock</string>

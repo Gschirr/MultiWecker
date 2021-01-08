@@ -15,7 +15,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button newRoutineButton = findViewById(R.id.createRoutine);
+        //Another way to implement a Button onClick Event
+        /*Button newRoutineButton = findViewById(R.id.createRoutine);
         newRoutineButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view)
@@ -23,8 +24,17 @@ public class MainActivity extends AppCompatActivity {
                 Intent second = new Intent(MainActivity.this, createRoutine.class);
                 startActivity(second);
             }
-        });
+        });*/
     }
 
+    public void switchToRoutineView(View view) {
+        Intent create = new Intent(MainActivity.this, createRoutine.class);
+        startActivity(create);
+    }
+
+    public void switchToChooseRoutineView(View view) {
+        Intent choose = new Intent(MainActivity.this, chooseRoutine.class);
+        startActivity(choose);
+    }
 
 }
